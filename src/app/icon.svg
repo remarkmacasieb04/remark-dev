@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Remark portfolio icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#57c4ff" />
+      <stop offset="100%" stop-color="#e79362" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#081224" />
+  <path d="M20 38h31c19 0 31 9 31 25 0 11-6 19-16 23l20 22H67L50 89H38v19H20V38zm18 15v21h12c9 0 14-3 14-10s-5-11-14-11H38z" fill="url(#bg)" />
+  <path d="M83 38h25v15H98v55H83V38z" fill="#f2f6fb" opacity=".92" />
+</svg>
+
