@@ -20,7 +20,7 @@ export function SiteHeader() {
           <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/[0.1] bg-white/[0.05] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
             <Image
               src="/images/6a6f12bc-f95b-442d-9362-87737dbc13ca.png"
-              alt=""
+              alt={`${portfolio.name} portrait`}
               fill
               sizes="44px"
               className="object-cover object-[center_18%]"

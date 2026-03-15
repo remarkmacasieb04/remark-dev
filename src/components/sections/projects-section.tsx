@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { portfolio } from "@/content/portfolio";
 import { Reveal } from "@/components/ui/motion";
 import { SectionHeading } from "@/components/ui/section-heading";
+import bg7 from "@/images/bg7.png";
 
 export function ProjectsSection() {
   return (
@@ -14,8 +15,8 @@ export function ProjectsSection() {
         <Reveal className="relative overflow-visible">
           <SectionHeading
             eyebrow="Projects"
-            title="Selected work that shows how I solve practical product problems."
-            description="I focus on projects that improve clarity, structure information well, and make user flow feel simpler from the first interaction."
+            title="Selected work that reflects how I build practical solutions."
+            description="These projects highlight clear workflows, usable interfaces, and real implementation."
           />
           <motion.div
             aria-hidden
@@ -24,7 +25,7 @@ export function ProjectsSection() {
             transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
           >
             <Image
-              src="/images/microbot.png"
+              src={bg7}
               alt=""
               width={96}
               height={96}

@@ -11,7 +11,7 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="About Me"
-            title="Building practical products while growing into full-stack work."
+            title="Building practical web solutions with a full-stack mindset."
             description={portfolio.about}
           />
         </Reveal>
@@ -33,8 +33,8 @@ export function AboutSection() {
                 <p className="mt-2 text-ink">{portfolio.currentFocus}</p>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.22em] text-accent">Expected graduation</p>
-                <p className="mt-2 text-ink">{portfolio.expectedGraduation}</p>
+                <p className="text-sm uppercase tracking-[0.22em] text-accent">Experience</p>
+                <p className="mt-2 text-ink">Outsoar PH OJT</p>
               </div>
             </div>
             <p className="mt-5 text-sm leading-7 text-muted">{portfolio.availability}</p>

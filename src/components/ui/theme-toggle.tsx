@@ -62,7 +62,6 @@ export function ThemeToggle() {
       >
         {isLight ? <SunIcon /> : <MoonIcon />}
       </span>
-      <span className="hidden sm:block">{mounted ? (isLight ? "Light Mode" : "Dark Mode") : "Theme"}</span>
     </button>
   );
 }

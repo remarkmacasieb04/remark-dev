@@ -7,10 +7,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(portfolio.seo.siteUrl),
   title: portfolio.seo.title,
   description: portfolio.seo.description,
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   keywords: [
     "Remark F. Macasieb",
-    "Junior Developer",
-    "Aspiring Full Stack Developer",
+    "JuniorDeveloper",
+    "Aspiring Full-Stack Developer",
     "React Portfolio",
     "Next.js Portfolio",
     "Mobile and Web Development",

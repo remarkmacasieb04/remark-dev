@@ -12,7 +12,7 @@ export function EducationSection() {
           <SectionHeading
             eyebrow="Education"
             title="Current education and technical specialization."
-            description={`I am completing ${portfolio.degree} at ${portfolio.university}, with a focus on ${portfolio.specialization} and expected graduation in ${portfolio.expectedGraduation}.`}
+            description={`I am taking ${portfolio.degree} at ${portfolio.university}, with a focus on ${portfolio.specialization}.`}
           />
         </Reveal>
 

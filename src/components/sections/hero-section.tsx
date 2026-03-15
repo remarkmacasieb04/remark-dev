@@ -1,12 +1,16 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { portfolio } from "@/content/portfolio";
 import { fadeUp, staggerContainer } from "@/components/ui/motion";
+import bg1 from "@/images/bg1.png";
+import bg5 from "@/images/bg5.png";
+import bg6 from "@/images/bg6.png";
 
-const spotlightSkills = ["React", "Next.js", "Flutter", "Node.js", "Laravel"];
-const heroTags = ["React + Next.js", "Expected 2026", "Open to junior roles"];
+const spotlightSkills = ["PHP", "React", "Next.js", "Node.js", "Laravel"];
+const heroTags = ["React + Next.js", "Laravel + Node.js", "Client-ready builds"];
 
 export function HeroSection() {
   const { scrollY } = useScroll();
@@ -29,7 +33,7 @@ export function HeroSection() {
                 {portfolio.role} / {portfolio.headline}
               </p>
               <h1 className="max-w-4xl font-[var(--font-heading)] text-5xl font-semibold tracking-tight text-ink sm:text-6xl lg:text-7xl">
-                Junior developer focused on responsive web and mobile products.
+                Aspiring Full-Stack Developer focused on responsive web experiences.
               </h1>
               <p className="max-w-xl text-balance text-lg leading-8 text-muted sm:text-xl">
                 {portfolio.heroIntro}
@@ -75,11 +79,26 @@ export function HeroSection() {
         </div>
 
         <motion.div variants={fadeUp} className="relative">
+          <div aria-hidden className="pointer-events-none absolute inset-0 hidden lg:block">
+            <Image
+              src={bg5}
+              alt=""
+              sizes="(max-width: 1023px) 0px, (max-width: 1279px) 144px, 176px"
+              className="site-art-cutout absolute -right-6 top-14 w-32 xl:right-0 xl:w-40"
+            />
+            <Image
+              src={bg6}
+              alt=""
+              sizes="(max-width: 1023px) 0px, (max-width: 1279px) 128px, 160px"
+              className="site-art-cutout absolute -bottom-4 -left-8 w-28 xl:left-0 xl:w-36"
+            />
+          </div>
           <motion.div
             className="panel relative overflow-hidden p-5 sm:p-6"
             style={{ y: visualY, scale: visualScale }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(102,184,255,0.2),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(255,135,84,0.18),transparent_36%)]" />
+            <div className="hero-visual-overlay absolute inset-0" />
             <motion.div
               aria-hidden
               className="absolute right-6 top-6 h-24 w-24 rounded-full border border-white/10 bg-white/[0.04]"
@@ -98,13 +117,13 @@ export function HeroSection() {
                 <div className="max-w-xl">
                   <p className="text-sm uppercase tracking-[0.26em] text-accent">Now building</p>
                   <h2 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-ink sm:text-3xl">
-                    Responsive interfaces, clearer product flow, and practical full-stack foundations.
+                    Clean interfaces, reliable backend work, and practical full-stack solutions.
                   </h2>
                 </div>
                 <div className="rounded-[1.5rem] border border-white/10 bg-canvas/60 px-4 py-3 text-left sm:min-w-36 sm:text-right">
-                  <p className="text-xs uppercase tracking-[0.22em] text-muted">Graduation</p>
+                  <p className="text-xs uppercase tracking-[0.22em] text-muted">Current role</p>
                   <p className="mt-2 font-[var(--font-heading)] text-xl font-semibold text-ink">
-                    {portfolio.expectedGraduation}
+                    OJT Developer
                   </p>
                 </div>
               </div>

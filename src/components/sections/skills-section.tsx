@@ -13,8 +13,8 @@ export function SkillsSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Tech Stack"
-            title="Core tools I use most often, plus the stack I’m growing into."
-            description="My strongest work is around interfaces and frontend structure, while I continue building practical backend and mobile capability through projects."
+            title="Core tools I use across frontend and backend work."
+            description="I work across interface development and backend implementation, with a focus on practical web solutions."
           />
         </Reveal>
 

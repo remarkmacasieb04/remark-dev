@@ -55,8 +55,8 @@ export function ContactSection() {
         <Reveal className="space-y-6">
           <SectionHeading
             eyebrow="Contact"
-            title="Let’s talk about internships, junior roles, or practical product work."
-            description="The fastest way to reach me is by email. You can also use the public links below if you want to connect or request a walkthrough."
+            title="Let’s talk about projects, collaborations, or web development work."
+            description="The fastest way to reach me is by email. You can also use the public links below to connect or request a walkthrough."
           />
 
           <div className="panel p-6 sm:p-7">
@@ -157,7 +157,7 @@ export function ContactSection() {
                 <button type="submit" className="button-primary">
                   {hasEmail ? "Open Email Draft" : "Request Contact"}
                 </button>
-                <p className="text-sm text-muted">Best for internships, junior roles, and project inquiries.</p>
+                <p className="text-sm text-muted">Best for projects, collaborations, and inquiries.</p>
               </div>
             </form>
 

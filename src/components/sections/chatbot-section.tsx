@@ -49,7 +49,7 @@ function getLocalAssistantReply(prompt: string): string | null {
       normalized,
     )
   ) {
-    return `${portfolio.name} is a ${portfolio.role.toLowerCase()} and ${portfolio.headline.toLowerCase()} currently studying ${portfolio.degree} at ${portfolio.university}. He focuses on mobile and web development and is building toward confident full-stack work.`;
+    return `${portfolio.name} is a ${portfolio.headline.toLowerCase()} currently studying ${portfolio.degree} at ${portfolio.university}. He works across frontend and backend development with a focus on practical web solutions.`;
   }
 
   if (/(skills|technologies|technology|tech stack|work with|tools)/.test(normalized)) {
@@ -57,15 +57,15 @@ function getLocalAssistantReply(prompt: string): string | null {
   }
 
   if (/(study|studying|education|school|college|university)/.test(normalized)) {
-    return `Remark is studying ${portfolio.degree} at ${portfolio.university} with a specialization in ${portfolio.specialization}. His current college timeline is ${portfolio.collegeYears}, with expected graduation in ${portfolio.expectedGraduation}.`;
+    return `Remark is studying ${portfolio.degree} at ${portfolio.university} with a specialization in ${portfolio.specialization}. His current college timeline is ${portfolio.collegeYears}.`;
   }
 
   if (/(role|roles|opportunit|looking for|hire|job)/.test(normalized)) {
-    return `Remark is currently open to ${portfolio.preferredWork.toLowerCase()}. He is especially interested in practical product work where he can keep growing across frontend and full-stack development.`;
+    return `Remark is currently open to ${portfolio.preferredWork.toLowerCase()}. He is especially interested in practical web work and collaborative builds.`;
   }
 
   if (/(goal|future|career|aspiring|direction)/.test(normalized)) {
-    return `Remark's long-term goal is to become a full stack developer who connects thoughtful interfaces with practical backend systems. He is growing through hands-on projects, cleaner UI work, and stronger product thinking.`;
+    return `Remark's long-term goal is to become a full-stack developer who connects strong interfaces with practical backend systems. He is growing through hands-on projects and real development experience.`;
   }
 
   if (/(project|portfolio project|featured work)/.test(normalized)) {
@@ -79,14 +79,14 @@ function getLocalAssistantReply(prompt: string): string | null {
       ? "His email is available on request through the contact section."
       : `You can reach him at ${portfolio.contact.email}.`;
 
-    return `${portfolio.availability} ${contactLine} The contact section is the best place to follow up about collaborations, internships, or junior opportunities.`;
+    return `${portfolio.availability} ${contactLine} The contact section is the best place to follow up about projects and collaborations.`;
   }
 
   return null;
 }
 
 function getFallbackReply() {
-  return "I can help with Remark's background, skills, education, career direction, and highlighted projects like Juanfix.com and Alumni Survey. Try one of the suggestion chips above.";
+  return "I can help with Remark's background, skills, education, career direction, and highlighted projects. Try one of the suggestion chips above.";
 }
 
 export function ChatbotSection() {

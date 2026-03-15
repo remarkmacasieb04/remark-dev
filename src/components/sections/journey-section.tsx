@@ -11,12 +11,12 @@ export function JourneySection() {
         <Reveal>
           <SectionHeading
             eyebrow="Journey"
-            title="The path I’m taking from foundation to full-stack growth."
-            description="I’m still early in my career, but every stage of my journey is guided by practical learning, meaningful projects, and a long-term goal of building complete products."
+            title="A path shaped by learning, projects, and real-world experience."
+            description="My journey combines academic growth, hands-on builds, and practical development experience."
           />
         </Reveal>
 
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-5 lg:grid-cols-2">
           {portfolio.journey.map((step, index) => (
             <Reveal key={step.title} delay={index * 0.08} className="panel p-6 sm:p-7">
               <div className="flex items-center justify-between gap-4">
@@ -38,4 +38,3 @@ export function JourneySection() {
     </section>
   );
 }
-
