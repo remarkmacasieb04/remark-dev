@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { portfolio } from "@/content/portfolio";
 import { fadeUp, staggerContainer } from "@/components/ui/motion";
-import bg1 from "@/images/bg1.png";
 import bg5 from "@/images/bg5.png";
 import bg6 from "@/images/bg6.png";
 

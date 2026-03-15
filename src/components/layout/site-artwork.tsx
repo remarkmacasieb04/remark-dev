@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bg1 from "@/images/bg1.png";
 import bg2 from "@/images/bg2.png";
 import bg3 from "@/images/bg3.png";
 import bg4 from "@/images/bg4.png";
