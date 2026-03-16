@@ -50,6 +50,7 @@ npm run build
 - `NEXT_PUBLIC_GITHUB_URL`: public GitHub profile or repo link
 - `NEXT_PUBLIC_LINKEDIN_URL`: public LinkedIn profile
 - `NEXT_PUBLIC_FACEBOOK_URL`: public Facebook profile
+- `NEXT_PUBLIC_UPWORK_URL`: public Upwork freelancer profile
 - `NEXT_PUBLIC_RESUME_URL`: public resume/CV file URL
 
 ## Customization Notes

@@ -30,13 +30,13 @@ export function SiteFooter() {
         <div className="flex flex-col gap-3 text-sm text-muted sm:items-end">
           <p>Built with Next.js, Tailwind CSS, Framer Motion, LangChain, and Groq.</p>
           <div className="flex flex-wrap gap-3">
-            <Link href="#projects" className="hover:text-ink">
+            <Link href="/#projects" className="hover:text-ink">
               Projects
             </Link>
-            <Link href="#assistant" className="hover:text-ink">
+            <Link href="/#assistant" className="hover:text-ink">
               Assistant
             </Link>
-            <Link href="#contact" className="hover:text-ink">
+            <Link href="/#contact" className="hover:text-ink">
               Contact
             </Link>
           </div>

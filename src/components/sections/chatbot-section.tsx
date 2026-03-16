@@ -178,8 +178,8 @@ export function ChatbotSection() {
         <Reveal className="space-y-6">
           <SectionHeading
             eyebrow="Portfolio Assistant"
-            title="An optional assistant for quick questions while visitors browse."
-            description="Visitors can use the floating launcher, try quick prompts, and get concise answers about my background, education, skills, and featured projects."
+            title="A small assistant for quick portfolio questions."
+            description="Use the launcher or a prompt to get fast answers about my background, skills, and projects."
           />
 
           <div className="grid gap-4 sm:grid-cols-2">
@@ -187,13 +187,13 @@ export function ChatbotSection() {
               <p className="text-sm uppercase tracking-[0.24em] text-accent">What it does</p>
               <div className="mt-5 grid gap-3">
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-muted">
-                  Explains Remark&apos;s background, study path, and career direction in a cleaner chat experience.
+                  Answers quick questions about Remark.
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-muted">
-                  Shares fast answers about skills, technologies, and highlighted projects.
+                  Covers skills and featured work.
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-muted">
-                  Stays pinned to the screen, so visitors can open it anytime while scrolling.
+                  Stays open while visitors browse.
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ export function ChatbotSection() {
               <div>
                 <p className="text-sm uppercase tracking-[0.24em] text-accent">Chat experience preview</p>
                 <h3 className="mt-3 font-[var(--font-heading)] text-3xl font-semibold text-ink">
-                  A cleaner assistant experience, now tucked into a floating chat box.
+                  A lighter floating chat.
                 </h3>
               </div>
               <button type="button" onClick={() => setIsOpen(true)} className="button-secondary">
@@ -254,8 +254,7 @@ export function ChatbotSection() {
                 <div className="absolute inset-x-4 bottom-4 rounded-[1.5rem] border border-white/10 bg-black/35 p-4 backdrop-blur-xl">
                   <p className="text-xs uppercase tracking-[0.22em] text-accent">Launcher icon</p>
                   <p className="mt-2 text-sm leading-7 text-ink">
-                    The assistant visuals now echo the floating chat button and the right-side
-                    companion, so the site feels more connected while users scroll.
+                    Matches the floating chat button.
                   </p>
                 </div>
               </div>
@@ -264,22 +263,19 @@ export function ChatbotSection() {
                 <div className="rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-5">
                   <p className="text-xs uppercase tracking-[0.22em] text-muted">Pinned behavior</p>
                   <p className="mt-3 text-base leading-7 text-ink">
-                    The assistant icon stays visible at the bottom right, so visitors can open it at
-                    any point without searching the page.
+                    Always available at the bottom right.
                   </p>
                 </div>
                 <div className="rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-5">
                   <p className="text-xs uppercase tracking-[0.22em] text-muted">Suggestion chips</p>
                   <p className="mt-3 text-base leading-7 text-ink">
-                    Clickable prompts are built into the chat box and can instantly answer key
-                    questions about Remark.
+                    Quick prompts for common questions.
                   </p>
                 </div>
                 <div className="rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-5">
                   <p className="text-xs uppercase tracking-[0.22em] text-muted">Portfolio-aware replies</p>
                   <p className="mt-3 text-base leading-7 text-ink">
-                    The assistant stays scoped to the portfolio content, helping users learn about
-                    studies, strengths, and project highlights quickly.
+                    Replies stay focused on the portfolio.
                   </p>
                 </div>
               </div>
@@ -307,7 +303,7 @@ export function ChatbotSection() {
                         alt=""
                         fill
                         sizes="48px"
-                        className="object-cover object-[50%_22%]"
+                        className="object-cover object-[50%_72%]"
                       />
                     </div>
                     <div>
@@ -410,7 +406,7 @@ export function ChatbotSection() {
               alt=""
               fill
               sizes="48px"
-              className="object-cover object-[50%_22%]"
+              className="object-cover object-[50%_72%]"
             />
           </div>
           <div className="hidden pr-2 text-left sm:block">

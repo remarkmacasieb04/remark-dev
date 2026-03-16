@@ -18,6 +18,7 @@ export type JourneyStep = {
 };
 
 export type ProjectEntry = {
+  slug: string;
   title: string;
   description: string;
   role: string;
@@ -25,6 +26,8 @@ export type ProjectEntry = {
   solution: string;
   outcome: string;
   tech: string[];
+  imageSrc?: string;
+  imagePlaceholder: string;
   demoUrl?: string;
   githubUrl?: string;
 };
@@ -158,6 +161,7 @@ export const portfolio = {
   ] satisfies JourneyStep[],
   projects: [
     {
+      slug: "cooper-attendance-system",
       title: "Cooper Attendance System",
       description: "Attendance system built during my OJT at Outsoar PH.",
       role: "OJT Developer",
@@ -168,10 +172,13 @@ export const portfolio = {
       outcome:
         "Shows my experience working on a practical attendance platform in a collaborative setup.",
       tech: ["Laravel", "Node.js", "Discord", "Redis", "Traefik", "Nginx"],
+      imageSrc:"/images/projects/cooper.png",
+      imagePlaceholder: "Attendance dashboard preview",
       demoUrl: "https://cooper.outsoar.it.com/",
-      githubUrl: "",
+      githubUrl: "https://github.com/outsoarph/cooper",
     },
     {
+      slug: "juanfix",
       title: "Juanfix.com",
       description: "Service-booking concept for on-demand home services.",
       role: "Web Application Concept",
@@ -182,10 +189,13 @@ export const portfolio = {
       outcome:
         "Shows my approach to user flow and clear service organization.",
       tech: ["Laravel", "Tailwind CSS", "Mysql", "PHP"],
+      imageSrc: "/images/projects/juanfix.png",
+      imagePlaceholder: "Home services booking UI",
       demoUrl: "https://juanfix.com/",
       githubUrl: "",
     },
     {
+      slug: "alumni-survey",
       title: "Alumni Survey",
       description: "Survey and records flow for collecting alumni information.",
       role: "Web data collection project",
@@ -196,6 +206,8 @@ export const portfolio = {
       outcome:
         "Shows my focus on usable forms and practical data capture.",
       tech: ["PHP", "JavaScript", "Tailwind CSS"],
+      imageSrc: "/images/projects/alumni.png",
+      imagePlaceholder: "Survey form and records table",
       demoUrl: "",
       githubUrl: "",
     },
@@ -207,6 +219,7 @@ export const portfolio = {
       withPlaceholder("GitHub", process.env.NEXT_PUBLIC_GITHUB_URL),
       withPlaceholder("LinkedIn", process.env.NEXT_PUBLIC_LINKEDIN_URL),
       withPlaceholder("Facebook", process.env.NEXT_PUBLIC_FACEBOOK_URL),
+      withPlaceholder("Upwork", process.env.NEXT_PUBLIC_UPWORK_URL),
     ],
     resumeUrl: process.env.NEXT_PUBLIC_RESUME_URL ?? "",
   },
@@ -282,3 +295,7 @@ Contact Status:
 - Use the published email and public social links when available.
 - If a link or resume has not been published yet, explain that it is available on request.
 `.trim();
+
+export function getProjectBySlug(slug: string) {
+  return portfolio.projects.find((project) => project.slug === slug);
+}

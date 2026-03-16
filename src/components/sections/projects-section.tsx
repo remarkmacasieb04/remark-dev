@@ -45,14 +45,53 @@ export function ProjectsSection() {
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(88,197,167,0.14),transparent_34%),radial-gradient(circle_at_bottom_left,rgba(232,147,98,0.14),transparent_36%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <div className="relative flex h-full flex-col">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="block rounded-[2rem] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+                  >
+                    {project.imageSrc ? (
+                      <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/40">
+                        <div className="relative aspect-[16/9] w-full">
+                          <Image
+                            src={project.imageSrc}
+                            alt={`${project.title} preview`}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            className="object-cover object-top"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="relative overflow-hidden rounded-[2rem] border border-dashed border-white/15 bg-[linear-gradient(135deg,rgba(255,135,84,0.18),rgba(102,184,255,0.12))] p-6">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(5,8,18,0.32),transparent_42%)]" />
+                        <div className="relative flex min-h-[14rem] flex-col justify-between">
+                          <span className="text-xs uppercase tracking-[0.24em] text-accent">
+                            Project image
+                          </span>
+                          <div className="space-y-2">
+                            <p className="font-[var(--font-heading)] text-2xl font-semibold text-ink">
+                              {project.imagePlaceholder}
+                            </p>
+                            <p className="text-sm text-muted">
+                              Replace this placeholder with a screenshot of {project.title}.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </Link>
+
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm uppercase tracking-[0.24em] text-accent">
                         Project 0{index + 1}
                       </p>
-                      <h3 className="mt-4 font-[var(--font-heading)] text-3xl font-semibold text-ink">
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="mt-4 block font-[var(--font-heading)] text-3xl font-semibold text-ink hover:text-accent"
+                      >
                         {project.title}
-                      </h3>
+                      </Link>
                     </div>
                     <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 font-[var(--font-mono)] text-sm text-muted">
                       {project.role}
@@ -60,22 +99,6 @@ export function ProjectsSection() {
                   </div>
 
                   <p className="mt-5 text-base leading-7 text-muted">{project.description}</p>
-
-                  <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                    <div className="rounded-2xl border border-white/8 bg-canvas/45 px-4 py-4">
-                      <p className="text-xs uppercase tracking-[0.22em] text-accent">Problem</p>
-                      <p className="mt-3 text-sm leading-7 text-muted">{project.problem}</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/8 bg-canvas/45 px-4 py-4">
-                      <p className="text-xs uppercase tracking-[0.22em] text-accent">Approach</p>
-                      <p className="mt-3 text-sm leading-7 text-muted">{project.solution}</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/8 bg-canvas/45 px-4 py-4">
-                      <p className="text-xs uppercase tracking-[0.22em] text-accent">What it shows</p>
-                      <p className="mt-3 text-sm leading-7 text-muted">{project.outcome}</p>
-                    </div>
-                  </div>
-
                   <div className="mt-6 flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span
@@ -88,6 +111,9 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="mt-8 flex flex-wrap gap-3">
+                    <Link href={`/projects/${project.slug}`} className="button-primary">
+                      View Case Study
+                    </Link>
                     {project.demoUrl ? (
                       <Link href={project.demoUrl} className="button-secondary">
                         Live Demo

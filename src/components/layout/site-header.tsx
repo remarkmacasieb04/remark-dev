@@ -4,12 +4,12 @@ import { portfolio } from "@/content/portfolio";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const links = [
-  { label: "Projects", href: "#projects" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
-  { label: "Assistant", href: "#assistant" },
-  { label: "Contact", href: "#contact" },
+  { label: "Projects", href: "/#projects" },
+  { label: "About", href: "/#about" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Education", href: "/#education" },
+  { label: "Assistant", href: "/#assistant" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function SiteHeader() {
@@ -49,7 +49,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Link href="#projects" className="button-secondary hidden sm:inline-flex">
+          <Link href="/#projects" className="button-secondary hidden sm:inline-flex">
             View Projects
           </Link>
         </div>
