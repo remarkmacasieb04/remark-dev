@@ -8,8 +8,9 @@ import { fadeUp, staggerContainer } from "@/components/ui/motion";
 import bg5 from "@/images/bg5.png";
 import bg6 from "@/images/bg6.png";
 
-const spotlightSkills = ["PHP", "React", "Next.js", "Node.js", "Laravel"];
-const heroTags = ["React + Next.js", "Laravel + Node.js", "Client-ready builds"];
+const spotlightSkills = ["Laravel", "PHP", "Mysql", "Next.js", "React"];
+const heroTags = ["Laravel Framework", "PHP Backend", "Practical Web Apps"];
+const primaryFocus = new Set(["Laravel", "PHP"]);
 
 export function HeroSection() {
   const { scrollY } = useScroll();
@@ -26,13 +27,13 @@ export function HeroSection() {
       >
         <div className="space-y-7">
           <motion.div variants={fadeUp} className="space-y-4">
-            <span className="eyebrow">Junior Developer Portfolio</span>
+            <span className="eyebrow">Laravel + PHP Portfolio</span>
             <div className="space-y-3">
               <p className="text-sm uppercase tracking-[0.28em] text-muted">
                 {portfolio.role} / {portfolio.headline}
               </p>
               <h1 className="max-w-4xl font-[var(--font-heading)] text-5xl font-semibold tracking-tight text-ink sm:text-6xl lg:text-7xl">
-                Aspiring Full-Stack Developer focused on responsive web experiences.
+                Laravel and PHP focused developer building practical web applications.
               </h1>
               <p className="max-w-xl text-balance text-lg leading-8 text-muted sm:text-xl">
                 {portfolio.heroIntro}
@@ -116,7 +117,7 @@ export function HeroSection() {
                 <div className="max-w-xl">
                   <p className="text-sm uppercase tracking-[0.26em] text-accent">Now building</p>
                   <h2 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-ink sm:text-3xl">
-                    Clean interfaces, reliable backend work, and practical full-stack solutions.
+                    Laravel-powered systems, reliable PHP backend work, and clean user interfaces.
                   </h2>
                 </div>
                 <div className="rounded-[1.5rem] border border-white/10 bg-canvas/60 px-4 py-3 text-left sm:min-w-36 sm:text-right">
@@ -146,7 +147,11 @@ export function HeroSection() {
                     {spotlightSkills.map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-ink"
+                        className={
+                          primaryFocus.has(skill)
+                            ? "rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold text-ink"
+                            : "rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-ink"
+                        }
                       >
                         {skill}
                       </span>

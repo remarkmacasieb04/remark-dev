@@ -54,7 +54,7 @@ export const portfolio = {
   name: "Remark F. Macasieb",
   firstName: "Remark",
   role: "Junior Developer",
-  headline: "Aspiring Full-Stack Developer",
+  headline: "Laravel + PHP Developer",
   age: 21,
   birthday: "April 24, 2004",
   availability: "Available for web development projects and collaborative opportunities.",
@@ -63,14 +63,14 @@ export const portfolio = {
   specialization: "Mobile and Web Development",
   collegeYears: "2022 - 2026",
   expectedGraduation: "2026",
-  currentFocus: "Web interfaces, backend features, and full-stack implementation",
-  preferredWork: "Frontend, backend, and full-stack development",
+  currentFocus: "Laravel, PHP, backend features, and practical full-stack implementation",
+  preferredWork: "Laravel, PHP, backend development, and full-stack web applications",
   highSchool: "Basista National High School",
   highSchoolYears: "2016 - 2022",
   heroIntro:
-    "Aspiring developer focused on React, Next.js, Laravel, and practical full-stack builds.",
+    "Laravel and PHP focused developer building practical full-stack web applications with clean interfaces and reliable backend logic.",
   about:
-    "I build clean, functional web experiences with a practical approach to frontend and backend development. I enjoy turning ideas into usable systems that are clear, efficient, and ready to grow.",
+    "I build clean, functional web experiences with a strong focus on Laravel and PHP. I enjoy turning ideas into usable systems that are clear, efficient, and ready to grow from backend logic through frontend delivery.",
   values: [
     {
       title: "Learning by building",
@@ -89,22 +89,22 @@ export const portfolio = {
     },
   ],
   stats: [
-    { label: "Current focus", value: "Frontend + Backend" },
+    { label: "Current focus", value: "Laravel + PHP" },
     { label: "Experience", value: "OJT at Outsoar PH" },
     { label: "Featured work", value: "3 Case Studies" },
   ],
   skillGroups: [
     {
+      title: "Core Backend",
+      description:
+        "My main stack for backend features, application logic, and practical Laravel-based development.",
+      skills: ["Laravel", "PHP", "Mysql", "Node.js", "Python", "Django"],
+    },
+    {
       title: "Frontend",
       description:
         "Responsive interfaces, component-driven layouts, and modern client-side experiences.",
       skills: ["React", "Next.js", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
-    },
-    {
-      title: "Backend",
-      description:
-        "Server-side logic, application flow, and practical full-stack foundations.",
-      skills: ["Node.js", "PHP", "Python", "Laravel", "Django"],
     },
     {
       title: "Mobile",
@@ -116,7 +116,7 @@ export const portfolio = {
       title: "Languages",
       description:
         "A flexible base across web, backend, and academic programming environments.",
-      skills: ["JavaScript", "PHP", "Python", "Java", "C++", "Kotlin"],
+      skills: ["PHP", "JavaScript", "Python", "Java", "C++", "Kotlin"],
     },
     {
       title: "Databases & Tools",
@@ -241,7 +241,7 @@ export const portfolio = {
 export const assistantContext = `
 Portfolio Owner: Remark F. Macasieb
 Professional Role: Junior Developer
-Career Goal: Aspiring Full-Stack Developer
+Career Goal: Laravel and PHP focused full-stack developer
 
 Education:
 - Pangasinan State University
@@ -250,13 +250,15 @@ Education:
 - College Years: 2022 - 2026
 
 About:
-- Remark is a junior web developer focused on practical web development.
-- He works across frontend and backend implementation.
+- Remark is a junior web developer with a strong focus on Laravel and PHP.
+- He works across frontend and backend implementation, with backend development as a main strength.
 - He values clean user experiences, clarity, and practical problem solving.
 - He is currently building experience through projects and OJT work at Outsoar PH.
 
 Skills:
+- Laravel
 - PHP
+- Mysql
 - HTML
 - CSS
 - Tailwind CSS
@@ -266,25 +268,30 @@ Skills:
 - Kotlin
 - Node.js
 - Python
-- Laravel
 - Django
 - Flutter
 - React
 - Next.js
-- Mysql
 - Git
 - PostgreSQL
 - Sqlite
 
 Projects:
-1. Juanfix.com
+1. Cooper Attendance System
+   Description: Attendance system built during OJT at Outsoar PH.
+   Role: OJT Developer
+   Problem: Teams needed a more organized way to manage attendance with a workflow connected to existing communication tools.
+   Solution: Helped build the system around Laravel, Node.js, and Discord with Redis, Traefik, and Nginx supporting the flow.
+   Tags: Laravel, Node.js, Discord, Redis, Traefik, Nginx
+
+2. Juanfix.com
    Description: Service-booking concept for on-demand home services.
    Role: Web Application Concept
    Problem: Customers need a simpler way to discover trusted home services and request help in one place.
    Solution: Planned a booking-focused flow that keeps service discovery and requests straightforward.
-   Tags: Flutter, Laravel, Tailwind CSS, Mysql
+   Tags: Laravel, PHP, Tailwind CSS, Mysql
 
-2. Alumni Survey
+3. Alumni Survey
    Description: Survey and records flow for collecting alumni information.
    Role: Web data collection project
    Problem: Schools need a clearer way to gather alumni records without confusing forms.

@@ -251,9 +251,9 @@ export function ChatbotSection() {
                     className="object-contain object-bottom"
                   />
                 </div>
-                <div className="absolute inset-x-4 bottom-4 rounded-[1.5rem] border border-white/10 bg-black/35 p-4 backdrop-blur-xl">
+                <div className="absolute inset-x-4 bottom-4 rounded-[1.5rem] border border-white/10 bg-black/55 p-4 backdrop-blur-xl">
                   <p className="text-xs uppercase tracking-[0.22em] text-accent">Launcher icon</p>
-                  <p className="mt-2 text-sm leading-7 text-ink">
+                  <p className="mt-2 text-sm leading-7 text-white/80">
                     Matches the floating chat button.
                   </p>
                 </div>
