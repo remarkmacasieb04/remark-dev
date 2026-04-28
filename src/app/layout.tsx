@@ -45,7 +45,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning data-theme="dark">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      data-theme="dark"
+      data-scroll-behavior="smooth"
+    >
       <body>
         <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
           <div className="grid-overlay absolute inset-0 opacity-35" />

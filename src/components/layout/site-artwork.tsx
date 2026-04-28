@@ -6,6 +6,28 @@ import bg5 from "@/images/bg5.png";
 import bg6 from "@/images/bg6.png";
 import bg7 from "@/images/bg7.png";
 
+const mobileLayers = [
+  {
+    src: bg5,
+    className:
+      "site-art-mobile absolute left-[-5.5rem] top-[8.5rem] w-[13rem] sm:left-[-4rem] sm:top-[9rem] sm:w-[15rem] lg:hidden",
+    sizes: "(max-width: 639px) 208px, 240px",
+    fetchPriority: "high" as const,
+  },
+  {
+    src: bg7,
+    className:
+      "site-art-mobile site-art-mobile-soft absolute right-[-3.5rem] top-[34rem] w-[8.5rem] sm:right-[-2rem] sm:top-[36rem] sm:w-[10rem] lg:hidden",
+    sizes: "(max-width: 639px) 136px, 160px",
+  },
+  {
+    src: bg6,
+    className:
+      "site-art-mobile absolute right-[-5rem] top-[72rem] w-[11.5rem] sm:right-[-3rem] sm:top-[76rem] sm:w-[13rem] lg:hidden",
+    sizes: "(max-width: 639px) 184px, 208px",
+  },
+];
+
 const cinematicLayers = [
   {
     src: bg3,
@@ -54,6 +76,17 @@ export function SiteArtwork() {
       <div className="absolute left-[-7rem] top-20 h-72 w-72 rounded-full bg-glow/10 blur-3xl" />
       <div className="absolute right-[-6rem] top-[34rem] h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
       <div className="absolute bottom-24 left-[8%] h-72 w-72 rounded-full bg-warm/10 blur-3xl" />
+
+      {mobileLayers.map((layer) => (
+        <Image
+          key={layer.src.src}
+          src={layer.src}
+          alt=""
+          fetchPriority={layer.fetchPriority}
+          sizes={layer.sizes}
+          className={layer.className}
+        />
+      ))}
 
       {cinematicLayers.map((layer) => (
         <Image

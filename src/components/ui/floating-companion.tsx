@@ -53,7 +53,7 @@ export function FloatingCompanion() {
         >
           <div className="absolute right-8 top-10 h-40 w-40 rounded-full bg-glow/18 blur-3xl" />
           <div className="absolute bottom-8 left-6 rounded-full border border-white/10 bg-surface/70 px-4 py-2 text-xs uppercase tracking-[0.22em] text-ink shadow-panel backdrop-blur-xl">
-            Hi there!
+            HIRE ME📩
           </div>
           <Image
             src="/images/bmax1.png"

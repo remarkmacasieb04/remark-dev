@@ -83,6 +83,7 @@ export function HeroSection() {
             <Image
               src={bg5}
               alt=""
+              fetchPriority="high"
               sizes="(max-width: 1023px) 0px, (max-width: 1279px) 144px, 176px"
               className="site-art-cutout absolute -right-6 top-14 w-32 xl:right-0 xl:w-40"
             />

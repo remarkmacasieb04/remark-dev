@@ -1,4 +1,4 @@
-# Remark Portfolio
+ # Remark Portfolio
 
 Production-ready personal portfolio for **Remark F. Macasieb**, built with Next.js App Router, React, Tailwind CSS, Framer Motion, and a LangChain + Groq chatbot assistant.
 
